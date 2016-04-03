@@ -10,7 +10,7 @@
 
 ###系统架构
 
-![main](pictures/SearchEngineStructor.png)
+![main](Pictures/SearchEngineStructor.png)
 
 ###系统代码目录
 
@@ -38,7 +38,7 @@ python computeIDF.py 为所有词计算IDF，存起来；
 然后搜索引擎就可以使用了，回到主目录，在main.py文件内写自己要搜索的句子，然后执行：
 python main.py得到搜索结果，如图：
 
-![result](pictures/result.png)
+![result](Pictures/result.png)
 
 ###相关技术
 
