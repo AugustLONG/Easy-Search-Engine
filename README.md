@@ -23,20 +23,21 @@
 
 ###基本流程
 **step1**：进入DataCrawer目录，分别执行：
-python crawlHITnewsUrls.py 进行获取新闻的Urls
-python crawlHITnews.py 对新闻进行爬取、存储
+>python crawlHITnewsUrls.py 进行获取新闻的Urls
+
+>python crawlHITnews.py 对新闻进行爬取、存储
 
 **step2**：进入Documents目录，执行
-python createDocumentDir.py 进行分类存储、方便文档管理器进行管理
+>python createDocumentDir.py 进行分类存储、方便文档管理器进行管理
 
 **step3**：进入InvertedIndexBuilder目录，执行：
-python createSubInvertedIndex.py 创建倒排索引，并按B树存储；
+>python createSubInvertedIndex.py 创建倒排索引，并按B树存储；
 
 **step4**：进入Utils目录，执行：
-python computeIDF.py 为所有词计算IDF，存起来；
+>python computeIDF.py 为所有词计算IDF，存起来；
 
 **step5**：然后搜索引擎就可以使用了，回到主目录，在main.py文件内写自己要搜索的句子，然后执行：
-python main.py得到搜索结果，比如搜索**`不断提高 哈工大`**结果如图：
+>python main.py 得到搜索结果，比如搜索**`不断提高 哈工大`**结果如图：
 
 ![result](Pictures/result.png)
 
